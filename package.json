@@ -1,6 +1,28 @@
 {
   "name": "@pkerschbaum/typescript-eslint-rules-requiring-type-info",
   "version": "0.0.1",
+  "license": "MIT",
+  "keywords": [
+    "typescript-eslint"
+  ],
+  "author": "Patrick Kerschbaum <patrick.kerschbaum@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pkerschbaum/typescript-eslint-rules-requiring-type-info"
+  },
+  "bugs": {
+    "url": "https://github.com/pkerschbaum/typescript-eslint-rules-requiring-type-info/issues"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist/**/*",
+    "src/**/*"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": "./dist/index.js"
   },
