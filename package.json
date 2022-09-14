@@ -35,6 +35,7 @@
   },
   "scripts": {
     "prepare": "husky install && ts-patch install -s",
+    "prepack": "pnpm run nuke:build && pnpm run build",
     "nuke": "pnpm run nuke:build && rimraf node_modules",
     "nuke:build": "rimraf dist *.tsbuildinfo",
     "lint": "eslint --max-warnings 0",
