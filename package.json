@@ -24,7 +24,13 @@
     "build:compile": "tsc",
     "dev:watch": "tsc -w --preserveWatchOutput"
   },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "jsdom": "^20.0.0"
+  },
   "devDependencies": {
+    "@types/jsdom": "^20.0.0",
+    "@types/node": "^16.11.25",
     "@typescript-eslint/eslint-plugin": "^5.37.0",
     "@typescript-eslint/parser": "^5.37.0",
     "eslint": "^8.23.1",
