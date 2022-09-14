@@ -4,7 +4,7 @@ import { JSDOM } from 'jsdom';
 
 import { constants } from '#/constants';
 
-async function fetchAndStore() {
+export async function fetchAndStoreRules() {
   const response = await axios.get<string>('https://typescript-eslint.io/rules/#extension-rules');
   const html = response.data;
 
@@ -33,5 +33,3 @@ async function fetchAndStore() {
     encoding: 'utf8',
   });
 }
-
-void fetchAndStore();
