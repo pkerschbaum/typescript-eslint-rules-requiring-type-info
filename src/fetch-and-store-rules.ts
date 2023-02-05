@@ -2,7 +2,7 @@ import axios from 'axios';
 import fs from 'fs';
 import { JSDOM } from 'jsdom';
 
-import { constants } from '#/constants';
+import { constants } from '#pkg/constants';
 
 export async function fetchAndStoreRules() {
   const response = await axios.get<string>('https://typescript-eslint.io/rules/#extension-rules');

@@ -1,4 +1,6 @@
 {
+  /* based on https://pkerschbaum.com/tidbits/sensible-tsconfig-defaults */
+
   "compilerOptions": {
     /* Language and Environment */
     "target": "ES2017",
@@ -6,9 +8,8 @@
     /* Modules */
     "module": "CommonJS",
     "paths": {
-      "#/*": ["./src/*"]
+      "#pkg/*": ["./src/*"]
     },
-    "rootDir": "./src",
     "types": [],
 
     /* Emit */
@@ -25,11 +26,14 @@
 
     /* Type Checking */
     "allowUnreachableCode": false,
+    "exactOptionalPropertyTypes": true,
     "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
     "strict": true,
 
     /* Projects */
-    "composite": true,
     "incremental": true,
 
     /* Completeness */
