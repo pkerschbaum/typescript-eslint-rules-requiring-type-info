@@ -1,0 +1,25 @@
+name: Test consuming the package in various scenarios
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: ['**/**']
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Run tests
+        run: pnpm run test:pkg-consumption
