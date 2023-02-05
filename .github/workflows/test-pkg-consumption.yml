@@ -2,8 +2,10 @@
 name: Test consuming the package in various scenarios
 
 on:
-  - push
-  - pull_request
+  push:
+    branches: [master]
+  pull_request:
+    branches: ['**/**']
 
 jobs:
   test-pkg-consumption:
