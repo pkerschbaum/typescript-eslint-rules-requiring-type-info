@@ -14,7 +14,7 @@ export function removeTypeInfoRules(eslintConfig: Linter.Config): Linter.Config 
 
   let newRules = eslintConfig.rules;
   if (typeof eslintConfig.rules === 'object') {
-    newRules = eslintConfig.rules;
+    newRules = {};
     for (const [ruleName, ruleConfig] of Object.entries(eslintConfig.rules)) {
       if (!rulesRequiringTypeInfo.includes(ruleName)) {
         newRules[ruleName] = ruleConfig;
