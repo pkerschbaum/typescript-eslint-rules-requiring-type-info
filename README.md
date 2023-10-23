@@ -1,5 +1,7 @@
 # `@pkerschbaum/typescript-eslint-rules-requiring-type-info`
 
+> _deprecated:_ got moved to https://github.com/pkerschbaum/packages/tree/main/packages/typescript-eslint-rules-requiring-type-info
+
 ## Problem
 
 Some [`typescript-eslint`](https://github.com/typescript-eslint/typescript-eslint) rules require type information.
